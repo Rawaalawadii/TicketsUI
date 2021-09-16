@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+  background-image: url("head.png");
+  height: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-icon{
+
+  position: absolute;
+  padding-left:  1500px;
+  padding-top: 310px;
+}
+.hero-text {
+ 
+  position: absolute;
+  padding-left:  1550px;
+  padding-top: 300px;
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color:#8d909b;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+  font: 1rem 'Fira Sans', sans-serif;
+  
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+table {
+  font-family: 'Fira Sans', sans-serif;
+  border-collapse: collapse;
+  border-color: #8d909b;
+  color: #8d909b;
+  width: 80%;
+  margin-left: 120px;
+  column-gap: 0px;
+
+}
+
+
+td {
+  text-align: left;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font: 1rem 'Fira Sans', sans-serif;
+  color : #8d909b;
+
+}
+
+.tdimage{
+padding-left: 300px;
+
+}
+.tdname {
+  padding-left: 100px; 
+  color: #172556;
+}
+
+.tddate{
+  padding-left: 20px;
+
+}
+
+.tdhost{
+  padding-left: 60px;
+
+}
+.tdprice{
+  padding-left: 50px;
+
+}
+.btn-group button {
+  background-color: #d5a9c0; 
+  border: 1px solid #d5a9c0; 
+  padding:9px 24px; 
+  cursor: pointer;
+  border-radius: 8px;
+  font: 1rem 'Fira Sans', sans-serif;
+  color : white;
+  
+}
+.btn-group button:hover {
+  background-color:gray;
+}
+
+.topBorderOnly {
+    border-top: 1px solid#8d909b;
+}
+
+.bottomBorderOnly {
+    border-bottom: 1px solid#8d909b;
+}
+label {
+
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: .4rem 0;
+}
+.grid-item {
+  text-align: left;
+}
+.dropbtn {
+  background-color: #ffffff;
+  margin-left: 20px;
+  border-radius: 0.2px;
+  cursor: pointer;
+  width: 80px;
+  text-align: left;
+
+}
+.dropdown {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background-color: #ffffff;
+  min-width: 160px;
+}
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.tdimagee{
+padding-left: -10px;
+
+}
+
+</style>
+</head>
+<body>
+
+    
+    <div class="hero-image">
+        <div class="hero-icon"><img style = "width: 25%" src="basket.png"></div>
+        <div class="hero-text">
+        <h1 style="font-size:25px"><div class="btn-group"><button type="button" class="btn btn-primary">Pay</button></h1></div>
+    </div></div>
+      
+      <br> <br>
+      <table>
+        <tr>
+          <th></th>
+          <th>Name</th>
+          <th>Date</th>
+          <th>Host</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th></th>
+        </tr>
+        
+        <tr class="topBorderOnly bottomBorderOnly">
+              <td class="tdimage" ><img src="dataScience.png" ></td>
+              <td class="tdname" >Data Scince Technologies</td>
+              <td class="tddate"><form action="/action_page.php">
+                   <label for="eventday"></label>
+                   <input type="date" id="start" name="trip-start"
+                  value="2020-07-22" min="2020-01-01" max="2020-12-31"></td>
+            <td class="tdhost">Dr.Modahmad Alazmi</td>
+
+            
+            <td class="dropdown"><button class="dropbtn">1</button>
+                <div class="dropdown-content">
+                  <a href="#">1</a>
+                  <a href="#">2</a>
+                  <a href="#">3</a>
+                  </td>
+
+            <td class="tdprice">95 SR</td>
+         
+                   <td class= ".tdimagee"><img src="close.png" ></td>
+          
+        </tr>
+       
+      </table>
+
+    </body>

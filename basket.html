@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+  background-image: url("head.png");
+  height: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-icon{
+
+  position: absolute;
+  padding-left:  1500px;
+  padding-top: 310px;
+}
+.hero-text {
+ 
+  position: absolute;
+  padding-left:  1550px;
+  padding-top: 300px;
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color:#8d909b;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+  font: 1rem 'Fira Sans', sans-serif;
+  
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+table {
+  font-family: 'Fira Sans', sans-serif;
+  border-collapse: collapse;
+  border-color: #8d909b;
+  color: #8d909b;
+  width: 80%;
+  margin-left: 120px;
+  column-gap: 0px;
+
+}
+
+
+td {
+  text-align: left;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font: 1rem 'Fira Sans', sans-serif;
+  color : #8d909b;
+
+}
+
+.tdimage{
+padding-left: 180px;
+
+}
+.tdname {
+  padding-left: 90px; 
+  color: #172556;
+}
+
+.tddate{
+  padding-left: 10px;
+
+}
+
+.tdhost{
+  padding-left: 40px;
+
+}
+.tdprice{
+  padding-left: 50px;
+
+}
+
+
+
+.btn-group button {
+  background-color: #d5a9c0; 
+  border: 1px solid #d5a9c0; 
+  padding:9px 24px; 
+  cursor: pointer;
+  border-radius: 8px;
+  font: 1rem 'Fira Sans', sans-serif;
+  color : white;
+  
+}
+.btn-group button:hover {
+  background-color:gray;
+}
+
+.topBorderOnly {
+    border-top: 1px solid#8d909b;
+}
+
+.bottomBorderOnly {
+    border-bottom: 1px solid#8d909b;
+}
+label {
+
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: .4rem 0;
+
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="hero-image">
+  <div class="hero-icon"><img style = "width: 25%" src="basket.png"></div>
+  <div class="hero-text">
+  <h1 style="font-size:25px">Tickets 0</h1></div>
+</div>
+
+<br> <br>
+<table>
+  <tr>
+    <th></th>
+    <th>Name</th>
+    <th>Date</th>
+    <th>Host</th>
+    <th>Price</th>
+    <th></th>
+  </tr>
+  
+  <tr class="topBorderOnly bottomBorderOnly">
+        <td class="tdimage" ><img src="dataScience.png" ></td>
+        <td class="tdname" >Data Scince Technologies</td>
+        <td class="tddate"><form action="/action_page.php">
+             <label for="eventday"></label>
+             <input type="date" id="start" name="trip-start"
+            value="2020-07-22" min="2020-01-01" max="2020-12-31"></td>
+      <td class="tdhost">Dr.Modahmad Alazmi</td>
+      <td class="tdprice">95 SR</td>
+             <td class= "btn-group"><button type="button" class="btn btn-primary"><i class="far fa-eye"></i>Purchase details</button></td>
+    
+  </tr>
+
+
+  <tr class="topBorderOnly bottomBorderOnly">
+      <td class="tdimage" ><img src="network.png" ></td>
+         <td class="tdname">Networking Design</td>
+              <td class="tddate"><form action="/action_page.php">
+              <label for="eventday"></label>
+             <input type="date" id="start" name="trip-start"  value="2020-07-22" min="2020-01-01" max="2020-12-31">
+         
+            </form></td>
+         <td class="tdhost">Alhanof Almohamd</td>
+         <td class="tdprice">80 SR </td>
+         <td class= "btn-group"><button type="button" class="btn btn-primary"><i class="far fa-eye"></i>Purchase details</button></td>
+  </tr>
+  <tr class="topBorderOnly bottomBorderOnly">
+        <td class="tdimage" ><img src="keyboard.png" ></td>
+         <td class="tdname">Clean code Principles</td>
+          <td class="tddate"><form action="/action_page.php">
+             <label for="eventday"></label> <input type="date" id="start" name="trip-start"value="2020-07-22" min="2020-01-01" max="2020-12-31">
+</td>
+       <td class="tdhost">Handi Abdulaziz</td>
+      <td class="tdprice">95 SR</td>
+      <td class="btn-group"><button type="button" class="btn btn-primary"><i class="far fa-eye"></i>Purchase details</button></td>
+  </tr>
+  
+
+    
+    
+  
+</table>
+
+
+</body>
+</html>
